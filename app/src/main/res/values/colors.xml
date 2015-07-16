@@ -1,4 +1,8 @@
 <resources>
     <color name="app_background">#ffc9e5ff</color>
     <color name="udacity_background">#F08C35</color>
+    <color name="udacity_light_background">#fff0b90e</color>
+
+    <color name="custom_background">#fff03f42</color>
+    <color name="custom_light_background">#fff06c6c</color>
 </resources>

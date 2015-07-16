@@ -31,7 +31,7 @@
                 android:text="@string/app_streamer"
                 android:id="@+id/buttonSpotifyStreamer"
                 android:layout_gravity="center_horizontal"
-                style="@style/udacityButton"
+                style="@style/UdacityButton"
                 android:layout_marginBottom="@dimen/basic_padding" />
 
             <Button
@@ -40,7 +40,7 @@
                 android:text="@string/app_football_scores"
                 android:id="@+id/buttonFootbalScores"
                 android:layout_gravity="center_horizontal"
-                style="@style/udacityButton"
+                style="@style/UdacityButton"
                 android:layout_marginBottom="@dimen/basic_padding"/>
 
             <Button
@@ -49,7 +49,7 @@
                 android:text="@string/app_library"
                 android:id="@+id/buttonLibrary"
                 android:layout_gravity="center_horizontal"
-                style="@style/udacityButton"
+                style="@style/UdacityButton"
                 android:layout_marginBottom="@dimen/basic_padding"/>
 
             <Button
@@ -58,7 +58,7 @@
                 android:text="@string/app_build_it_bigger"
                 android:id="@+id/buttonBuildItBigger"
                 android:layout_gravity="center_horizontal"
-                style="@style/udacityButton"
+                style="@style/UdacityButton"
                 android:layout_marginBottom="@dimen/basic_padding"/>
 
             <Button
@@ -67,7 +67,7 @@
                 android:text="@string/app_XYZReader"
                 android:id="@+id/buttonXYZReader"
                 android:layout_gravity="center_horizontal"
-                style="@style/udacityButton"
+                style="@style/UdacityButton"
                 android:layout_marginBottom="@dimen/basic_padding"/>
 
             <Button
@@ -76,7 +76,7 @@
                 android:text="@string/app_capstone"
                 android:id="@+id/buttonCapstone"
                 android:layout_gravity="center_horizontal"
-                style="@style/udacityButton"
+                style="@style/CustomButton"
                 android:layout_marginBottom="@dimen/basic_padding"/>
         </LinearLayout>
     </LinearLayout>
