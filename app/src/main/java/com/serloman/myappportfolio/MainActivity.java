@@ -47,98 +47,46 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void initButtons(){
-        initStreamer();
-        initFootballScores();
-        initLibrary();
-        initBuildItBigger();
-        initXYZReader();
-        initCapstone();
+        initButtonDefault(R.id.buttonSpotifyStreamer);
+        initButtonDefault(R.id.buttonFootbalScores);
+        initButtonDefault(R.id.buttonLibrary);
+        initButtonDefault(R.id.buttonBuildItBigger);
+        initButtonDefault(R.id.buttonXYZReader);
+        initButtonDefault(R.id.buttonCapstone);
     }
 
-    private void initStreamer(){
-        Button streamerButton = (Button) findViewById(R.id.buttonSpotifyStreamer);
-        streamerButton.setOnClickListener(new View.OnClickListener() {
+    private void initButtonDefault(final int idButton){
+        Button defaultButton = (Button) findViewById(idButton);
+        defaultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                actionStreamer();
+                actionButton(idButton);
             }
         });
     }
 
-    private void actionStreamer(){
-        showProvisionalButtonAction(getString(R.string.app_streamer));
+    private void actionButton(int idButton){
+        switch (idButton){
+            case R.id.buttonSpotifyStreamer:
+                showProvisionalButtonAction(getString(R.string.app_streamer));
+                break;
+            case R.id.buttonFootbalScores:
+                showProvisionalButtonAction(getString(R.string.app_football_scores));
+                break;
+            case R.id.buttonLibrary:
+                showProvisionalButtonAction(getString(R.string.app_library));
+                break;
+            case R.id.buttonBuildItBigger:
+                showProvisionalButtonAction(getString(R.string.app_build_it_bigger));
+                break;
+            case R.id.buttonXYZReader:
+                showProvisionalButtonAction(getString(R.string.app_XYZReader));
+                break;
+            case R.id.buttonCapstone:
+                showProvisionalButtonAction(getString(R.string.app_capstone));
+                break;
+        }
     }
-
-    private void initFootballScores(){
-        Button streamerButton = (Button) findViewById(R.id.buttonFootbalScores);
-        streamerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                actionFootballScores();
-            }
-        });
-    }
-
-    private void actionFootballScores(){
-        showProvisionalButtonAction(getString(R.string.app_football_scores));
-    }
-
-    private void initLibrary(){
-        Button streamerButton = (Button) findViewById(R.id.buttonLibrary);
-        streamerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                actionLibrary();
-            }
-        });
-    }
-
-    private void actionLibrary(){
-        showProvisionalButtonAction(getString(R.string.app_library));
-    }
-
-    private void initBuildItBigger(){
-        Button streamerButton = (Button) findViewById(R.id.buttonBuildItBigger);
-        streamerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                actionBuildItBigger();
-            }
-        });
-    }
-
-    private void actionBuildItBigger(){
-        showProvisionalButtonAction(getString(R.string.app_build_it_bigger));
-    }
-
-    private void initXYZReader(){
-        Button streamerButton = (Button) findViewById(R.id.buttonXYZReader);
-        streamerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                actionXYZReader();
-            }
-        });
-    }
-
-    private void actionXYZReader(){
-        showProvisionalButtonAction(getString(R.string.app_XYZReader));
-    }
-
-    private void initCapstone(){
-        Button streamerButton = (Button) findViewById(R.id.buttonCapstone);
-        streamerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                actionCapstone();
-            }
-        });
-    }
-
-    private void actionCapstone(){
-        showProvisionalButtonAction(getString(R.string.app_capstone));
-    }
-
 
     private void showProvisionalButtonAction(String appName){
         Toast.makeText(this, "This will launch my " + appName + " app.", Toast.LENGTH_SHORT).show();
